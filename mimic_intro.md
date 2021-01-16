@@ -4,7 +4,18 @@
 基本的に以下のリンクを参照
 https://mimic.physionet.org/tutorials/install-mimic-locally-windows/
 
+### windowsに導入したPostgreSQLをsql shell (psql)から使う
+アプリ検索からpsqlなどで検索して起動。<br>
+Serverなど聞かれるがひとまずデフォルト設定で入ればいいのでパスワード以外Enterでスキップ。<br>
+以下の操作の設定部分はpsql起動ごとに必要。コマンドなどは目的に応じて。<br>
 
+作成したmimicデータベースに接続。
+`\c mimic;`
+作成したスキーマを設定
+`set search_path to mimiciii;`
+.sqlファイルなどを実行。
+`\i D:/mimic_iii/mimic-code/buildmimic/postgres/postgres_create_tables.sql`
+`\i D:/mimic_iii/mimic-code/concepts/severityscores/sapsii.sql`
 
 ### wslでの操作（回り道）
 結局Pythonがwindowsにあるので、windows側での構築が必要だった。
@@ -29,5 +40,4 @@ https://mmbiostats.com/mimic_how_to
 https://www.dbonline.jp/postgresql/role/index2.html
 
 これでログインユーザーのターミナルから直接DBへのアクセスができるようになった。
-
 
