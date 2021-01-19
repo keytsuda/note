@@ -35,3 +35,4 @@ pandasで日付の差分を計算する際に、オーバーフローする(ns�
 
 ## mimic-code concepts 
 定義や意味に基づいて、データ加工が行われる。
+windowsの
