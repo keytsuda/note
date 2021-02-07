@@ -33,6 +33,17 @@ pandasで日付の差分を計算する際に、オーバーフローする(ns�
 "sapii.csv"がなかったため、DataMerging.ipynbが途中で止まった。
 どうやら公式から出ているsqlで計算できる数値の模様。
 
+
 ## mimic-code concepts 
 定義や意味に基づいて、データ加工が行われる。
-windowsの
+以下の記述に従って、wslを用いたwindowsの方法を実行。
+https://github.com/MIT-LCP/mimic-code/tree/master/concepts
+
+一通りのconceptなどは上の.batファイルでPostgreSQL内に作成された。
+が、スキーマを設定せずに実行されているので、上のスキーマ（mimiciii）を設定した時とは別のものが作成されている。
+
+ひとまず利用するsapsii scoreはICU-stay一日目のデータを用いて算出されている。つまり滞在1日目終了時点でのスコアが出てくる。
+途中経過として、一日終了後のsapsiiスコアを可視化するのがよいか？
+
+
+
